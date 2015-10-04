@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2015-10-04T11:38:46 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test3" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a1f690a3-5977-4467-85f8-6b0bcd5b7210">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cGllcnJlbXlkYi5tZWluZV90YWJlbGxlIEFTICwxOTQsNDgsOGQzOGY5YzgtZjJkZi00NGFlLWEy&#xA;NWQtNDQzNTQ2ODkwOTc4Ow=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test DB"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString>
+		<![CDATA[SELECT pierremydb.meine_tabelle.id,
+	pierremydb.meine_tabelle.username,
+	pierremydb.meine_tabelle.vorname,
+	pierremydb.meine_tabelle.nachname,
+	pierremydb.meine_tabelle.resume
+FROM pierremydb.meine_tabelle]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vorname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nachname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="resume" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/15)]]></groupExpression>
+		<groupHeader>
+			<band height="5"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/5)]]></groupExpression>
+		<groupHeader>
+			<band height="40"/>
+		</groupHeader>
+	</group>
+	<background>
+		<band height="801" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="670" forecolor="#002BFF" uuid="08e0e467-5b9a-452c-a9a3-cf205fe23c9f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Atlantic Gmbh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="610" width="553" height="110" uuid="386b9c3e-42ff-4780-bfb4-24afa90b1c07"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Wikipedia [ˌvɪkiˈpeːdia] ist ein am 15. Januar 2001 gegründetes Projekt zur Erstellung eines freien Onlinelexikons in zahlreichen Sprachen. Die Wikipedia ist gegenwärtig das meistbenutzte Online-Nachschlagewerk und liegt auf Platz sieben der meistbesuchten Websites der Welt[1] und Deutschlands[2] sowie auf Platz sechs in den USA.[3] Sie ist dabei weltweit wie in Deutschland mit der Top Level Domain .org die einzige nichtkommerzielle Website unter den Top 50.[1][2]
+
+Etwa 35 Millionen Artikel der Wikipedia in mehr als 280 Sprachen werden in Mehrautorenschaft von unentgeltlich arbeitenden Freiwilligen[4] konzipiert, verfasst und nach dem Prinzip des kollaborativen Schreibens fortwährend gemeinschaftlich korrigiert, erweitert und aktualisiert.
+
+Das Ziel von Wikipedia ist es, eine frei lizenzierte und qualitativ hochwertige Enzyklopädie zu schaffen und zu verbreiten.[5] Jeder Internetnutzer kann Wikipedia nicht nur lesen, sondern auch als Autor daran mitwirken. Um Inhalte zu verändern, ist eine Anmeldung nicht erforderlich. In einem offenen Bearbeitungsprozess hat Bestand, was von der Gemeinschaft der Mitarbeitenden akzeptiert wird.
+
+Bisher haben international mehr als 2,0 Millionen angemeldete und eine unbekannte Zahl nicht angemeldeter Nutzer zur Wikipedia beigetragen. Rund 5800 Autoren arbeiten regelmäßig an der deutschsprachigen Ausgabe (Stand: Mai 2015).[6]
+
+Die englischsprachige Version wird mit Abstand am häufigsten aufgerufen, gefolgt von der japanischsprachigen Ausgabe und der russischsprachigen Wikipedia.[7] Dabei ist die englischsprachige Wikipedia mit 4,9 Millionen Artikeln die größte Sprachversion, gefolgt von der schwedischen Wikipedia mit 1,97 Millionen Artikeln sowie von der niederländischsprachigen und der deutschsprachigen Wikipedia mit jeweils über 1,8 Millionen Artikeln (jeweils Stand Juni 2015).[8][9] Neben ihrer Funktion als Enzyklopädie spielt die Wikipedia eine wachsende Rolle als Medium für die Verbreitung von Nachrichten,[10] auch in aktuellen Krisensituationen.[11]]]></text>
+			</staticText>
+		</band>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="363fa2ad-70fc-43cb-9062-e6c62c7f48fc"/>
+				<imageExpression><![CDATA["leaf_banner_gray.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="369" height="33" uuid="6f9c1004-6140-4588-9c4f-d75824835765"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[RECHNUNG VON KUNDE X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="117" y="46" width="157" height="22" uuid="8e16dabd-2e54-471b-9652-83e1d55379ec"/>
+				<text><![CDATA[Leaf Gray SubTitle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="544e89f7-0fd1-4142-aa23-e335e3be7007"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="111" height="15" uuid="3c0564e9-b5a6-4734-b2e1-27ab88037c6a"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="111" y="19" width="111" height="15" uuid="01a1d852-3a6f-47e4-802a-f2968ca779ac"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="222" y="19" width="111" height="15" uuid="ad6f8367-1a9a-4727-ba7c-6d8cd32b8f33"/>
+				<text><![CDATA[vorname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="333" y="19" width="111" height="15" uuid="29f15d85-21cd-4b51-b3b1-4aac88d60caa"/>
+				<text><![CDATA[nachname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="444" y="19" width="111" height="15" uuid="ac0e98d8-9a9d-461e-9aaa-20b90f6f2463"/>
+				<text><![CDATA[resume]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="cb229859-ab9a-4aa3-afa2-84439642f4ee"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="-10" y="1" width="111" height="15" uuid="e4a4dd8a-55b9-4e7b-8c64-e61e29e0feb7"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="110" y="0" width="111" height="15" uuid="6572cca3-641e-4da7-840f-e5a172602d1a"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="222" y="1" width="111" height="15" uuid="cc691422-80c4-4134-9002-3066bc2caadb"/>
+				<textFieldExpression><![CDATA[$F{vorname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="320" y="0" width="111" height="15" uuid="87af96bf-4448-4e00-a397-88fdf49364eb"/>
+				<textFieldExpression><![CDATA[$F{nachname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="444" y="0" width="111" height="15" uuid="ebcbd8ba-6267-4d35-bded-1a771c129f39"/>
+				<textFieldExpression><![CDATA[$F{resume}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="401e0e59-de38-4dd2-8257-418cb489177c"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="deb23d85-47bb-4de6-978e-113ff117188c"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="c6ce76ba-6e11-41e2-9415-72dc2eff001b"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="5a79d2a0-bcde-4ad5-adf0-c4eb2066f6dd"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
