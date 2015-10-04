@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
-<!-- 2015-10-04T11:27:49 -->
+<!-- 2015-10-04T12:44:01 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test6" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d710a7b-0fa0-40a6-b6da-332d78aa0df8">
 	<property name="com.jaspersoft.studio.data.sql.tables" value="cGllcnJlbXlkYi5tZWluZV90YWJlbGxlIEFTICw3MCwxMjksYjM3NTM2ZDYtZmUwMi00N2Q3LWI2&#xA;NGMtODViNDNkZjg2MzAxOw=="/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test DB"/>
@@ -31,7 +31,12 @@ FROM pierremydb.meine_tabelle]]>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="459" y="33" width="100" height="30" uuid="9695a5e0-3478-4b16-8f2d-78e148fb2deb"/>
+				<text><![CDATA[fefewf]]></text>
+			</staticText>
+		</band>
 	</title>
 	<pageHeader>
 		<band height="35" splitType="Stretch"/>
