@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2015-10-04T11:38:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c190e867-3886-43ec-83c3-447e3b456677">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cGllcnJlbXlkYi5tZWluZV90YWJlbGxlIEFTICwxMjgsMTIxLDU0OGMyYmVkLTQ5NjctNDEwMy1h&#xA;Njk0LWVhZGY5YWMzMjdiNDs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Test DB"/>
+	<queryString>
+		<![CDATA[SELECT pierremydb.meine_tabelle.id,
+	pierremydb.meine_tabelle.username,
+	pierremydb.meine_tabelle.vorname,
+	pierremydb.meine_tabelle.nachname,
+	pierremydb.meine_tabelle.resume
+FROM pierremydb.meine_tabelle]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vorname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nachname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="resume" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-10" width="230" height="30" uuid="7137b99f-4da1-4632-b843-38434f36995c"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[School Revenue Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="10" width="100" height="30" uuid="3379a605-66da-4156-a4d2-01920e127c6b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="10" width="100" height="30" uuid="98aeaf80-ba81-4c66-b072-db5f15cf6d65"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[System]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="10" width="100" height="30" uuid="f875c683-cc6a-4b54-998c-1fc573e24b8a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Source]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="7" width="100" height="30" uuid="005fde3d-e328-4e30-9373-9220c1d68771"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fund]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="7" width="100" height="30" uuid="ae133b0a-031c-45e8-b745-25c82a740526"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Revenue]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="-5" width="100" height="30" uuid="91bf36bf-3d1f-4c20-935c-a46d8d038223"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="100" height="30" uuid="1fe28da9-e5c7-4030-a431-9c4612ad874d"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="100" height="30" uuid="76bd70f3-c766-441d-873f-ff49373b536b"/>
+				<textFieldExpression><![CDATA[$F{vorname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="06dea474-9ddc-4aee-9fec-53768fd61887"/>
+				<textFieldExpression><![CDATA[$F{nachname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="100" height="30" uuid="bc9b547b-55d9-476c-b950-4f514938b1be"/>
+				<textFieldExpression><![CDATA[$F{resume}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
